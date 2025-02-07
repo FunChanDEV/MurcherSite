@@ -3,10 +3,355 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My prototype</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+    <title>Murcher VPN</title>
   </head>
   <body>
-    <h1>This is test page</h1>
-    <h2>Wait to push on nginx !</h2>
+    <div class="content">
+      <div class="h1-information">
+        <h1>Murcher VPN</h1>
+        <span>
+          Устал от постоянно долгой загрузки ютуб, тикток? Или ChatGPT не
+          запускается в самый нужный момент? Хочу вам предложить простой,
+          быстрый и удобный VPN :)
+        </span>
+      </div>
+
+      <!-- Карторчка преимуществ -->
+      <div class="topic-cards">
+        <h2>Чем он отличается от других?</h2>
+        <div class="cards">
+          <div class="card">
+            <video
+              autoplay
+              loop
+              muted
+              playsinline
+              src="src/media/img/car.webm"
+            ></video>
+            <!-- <img src="src/media/img/car.webm" alt="Машинка" /> -->
+            <h3>Быстрые сервера</h3>
+            <p>
+              Скорость соединения от 500 до 1000мбит/сек. Пинг до 120, что
+              хорошо подходит для дискорд и некоторых игр.
+            </p>
+            <p>Около 15 локаций на выбор!</p>
+          </div>
+
+          <div class="card">
+            <!-- <img src="src/media/img/key.png" alt="Ключ" /> -->
+            <video
+              autoplay
+              loop
+              muted
+              playsinline
+              src="src/media/img/key.webm"
+            ></video>
+            <h3>Безопасное соединение</h3>
+            <p>
+              Никто не узнает о том, какие сайты ты посещаешь и что на них
+              делаешь.
+            </p>
+          </div>
+
+          <div class="card">
+            <!-- <img src="src/media/img/sheep.png" alt="Овца" /> -->
+            <video
+              autoplay
+              loop
+              muted
+              playsinline
+              src="src/media/img/sheep.webm"
+            ></video>
+            <h3>Без рекламы и прочего</h3>
+            <p>
+              Тебе достаточно скачать приложение и выбрать нужный сервер. ВСЁ!
+              Никакой рекламы и ограничений скорости.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Руководство -->
+
+      <div class="instruction">
+        <!-- How to use -->
+        <div class="question">
+          <div>
+            <div class="text"><span>Как начать пользоваться</span></div>
+            <div class="img">
+              <!-- <img src="src/media/img/question.png" alt="question" /> -->
+              <video
+                autoplay
+                loop
+                muted
+                playsinline
+                src="src/media/img/question.webm"
+              ></video>
+            </div>
+          </div>
+        </div>
+
+        <!-- Телеграмм бот -->
+        <div class="tg-bot">
+          <p class="title-p">1. Зайди в телеграмм бота и получи ключ.</p>
+          <div class="button-row">
+            <a href="">
+              <div class="button">
+                <span>Сюда тык</span>
+                <img
+                  src="src/media/img/social-media/tg.png"
+                  alt="telegram-logo"
+                />
+              </div>
+            </a>
+          </div>
+
+          <div class="tg-bot-img">
+            <img src="src/media/vpn-instruction/tg-key.jpg" alt="tg-bot" />
+            <p>Ключ будет иметь такой вид. Необходимо его скопировать!</p>
+          </div>
+        </div>
+
+        <p class="title-p">2. Выбери свою платформу</p>
+
+        <!-- Карточка с платформами -->
+
+        <div class="platforms">
+          <div class="platforms-row">
+            <a href="#windows">
+              <div style="background-color: rgb(0, 95, 184)">
+                <img src="src/media/vpn-instruction/windows.webp" alt="" />
+                <span>Windows</span>
+              </div>
+            </a>
+
+            <a href="#android">
+              <div style="background-color: rgb(48, 175, 107)">
+                <img src="src/media/vpn-instruction/android.webp" alt="" />
+                <span>Android</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="windows-dowload">
+          <a
+            href="https://wiki.gemera-vpn.net/windows-linux/spisok-prilozhenii-i-ikh-nastroikakh"
+            target="_blank"
+          >
+            <div class="button">
+              <span>Сторонняя инструкция</span>
+            </div>
+          </a>
+        </div>
+        <!-- Андроид инструкция -->
+        <div class="android" id="android">
+          <h3>Android</h3>
+          <p style="margin: 10px">3. Скачай приложение</p>
+          <div class="android-dowload">
+            <a
+              target="_blank"
+              href="https://play.google.com/store/apps/details?id=com.v2raytun.android"
+            >
+              <div class="button">
+                <span>Скачать из Google Play</span>
+              </div>
+            </a>
+          </div>
+          <p>4. Открой приложение</p>
+          <p class="italic" style="font-size: 18pt">
+            Убедись, что скопировал ключ из бота!
+          </p>
+
+          <div class="text">
+            <p>5. Нажми на "+" в верхнем правом углу</p>
+          </div>
+          <img src="src/media/vpn-instruction/android_01.jpg" alt="" />
+          <div class="text">
+            <p>6. Нажми "Импорт из буфера обмена</p>
+          </div>
+          <img src="src/media/vpn-instruction/android_02.jpg" alt="" />
+          <div class="text">
+            <p>6. Выбирай нужную страну (сервер)</p>
+          </div>
+          <img src="src/media/vpn-instruction/android_03.jpg" alt="" />
+
+          <p>ГОТОВО :)</p>
+        </div>
+
+        <!-- Windows инструкция -->
+
+        <div class="windows" id="windows">
+          <h3>Windows</h3>
+          <p>3. Первым делом определи как ты хочешь использовать VPN.</p>
+
+          <!-- Объяснение текст -->
+          <div class="explanation">
+            <p>
+              Смотри, можно его включить как на телефоне и он будет
+              <span class="underline">работать на</span> все сайты и приложения.
+            </p>
+            <p>
+              Или же сделать так, чтобы только некоторые приложения или сайты
+              работали через VPN.
+            </p>
+            <p>Давай разберём, что будет лучше и удобнее для тебя :)</p>
+          </div>
+
+          <!-- Проксирование без Nekobox (простое) -->
+
+          <div class="introductory">
+            <p class="background-p">Без распределения. Работает на всё.</p>
+            <div class="explanation">
+              <p>
+                Всё довольно просто. Ввёл ключи и работает. Как ты сделал это на
+                телефоне, так же само и на пк.
+              </p>
+            </div>
+            <figure>
+              <img
+                src="src/media/vpn-instruction/without-nekobox.webp"
+                alt="without-nekobox"
+              />
+              <figcaption>Схема работы VPN</figcaption>
+            </figure>
+            <!-- Список плюсов -->
+            <div class="list">
+              <p style="color: rgb(0, 211, 0)">+ Плюсы:</p>
+              <ul>
+                <li>Всё очень просто</li>
+                <li>Работает без ошибок (в основном)</li>
+              </ul>
+            </div>
+            <!-- Список минусов -->
+            <div class="list">
+              <p style="color: rgb(247, 0, 21)">- Минусы:</p>
+              <ul>
+                <li>В доте и дискорде не посидишь (пинг)</li>
+                <li>
+                  Сайты по типу Госуслуг не загружаются, а ВК или банки тормозят
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Проксирование с nekobox (сложное) -->
+          <div class="introductory">
+            <p class="background-p">
+              С распределением по приложениям и сайтам.
+            </p>
+            <div class="explanation">
+              <p>
+                Этот способ сложнее, но зато vpn отключать не нужно! Можно
+                играть в игры без потери пинга.
+              </p>
+            </div>
+            <figure>
+              <img
+                src="src/media/vpn-instruction/withnekobox.webp"
+                alt="nekobox"
+              />
+              <figcaption>Схема работы VPN</figcaption>
+            </figure>
+            <!-- Список плюсов -->
+            <div class="list">
+              <p style="color: rgb(0, 211, 0)">+ Плюсы:</p>
+              <ul>
+                <li>Настроил один раз и очень удобно</li>
+                <li>Отключать не надо</li>
+                <li>Гибко настраивается (нужные приложение или сайты)</li>
+              </ul>
+            </div>
+            <!-- Список минусов -->
+            <div class="list">
+              <p style="color: rgb(247, 0, 21)">- Минусы:</p>
+              <ul>
+                <li>Всё же долго настраивать</li>
+                <li>
+                  <span class="underline"
+                    >После сна VPN-программа начинает лагать!</span
+                  ><span> Нужно</span>
+                  <span class="underline">перезапускать</span> <span> пк.</span>
+                  <span>Такое бывает на ноутбуках!</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Инструкция без проскирования -->
+          <hr />
+
+          <div class="explanation">
+            <p>
+              Давай начнём с простого способа, если тебе он подходит. В любом
+              случае пролистай вниз и найди инструкцию для смешариков с
+              проксированием.
+            </p>
+          </div>
+          <div class="windows-dowload">
+            <p>3. Качаем эту прогу (hiddify)</p>
+            <a
+              target="_blank"
+              href="https://github.com/hiddify/hiddify-next/releases/download/v2.5.7/Hiddify-Windows-Setup-x64.exe"
+            >
+              <div class="button">
+                <span>Скачать c GitHub</span>
+              </div>
+            </a>
+          </div>
+          <p class="title-p">
+            4. В установщике нету ничего сложного. Просто далее :)
+          </p>
+          <p>5. Запусти hiddify</p>
+          <figure>
+            <img src="src/media/vpn-instruction/hiddify_01.jpg" alt="hiddify" />
+            <figcaption>Здесь можно выбрать язык</figcaption>
+          </figure>
+          <p>6. Нажми новый профиль</p>
+          <img src="src/media/vpn-instruction/hiddify_02.jpg" alt="hiddify" />
+          <p>7. "Добавить профиль из буфера обмена"</p>
+          <p>
+            <span class="italic">Скопируй перед этим ключ!</span>
+          </p>
+          <img src="src/media/vpn-instruction/hiddify_03.jpg" alt="hiddify" />
+          <p>7. Подключись к VPN и нажми "Прокси"</p>
+          <img src="src/media/vpn-instruction/hiddify_04.jpg" alt="hiddify" />
+          <p>7. Выбирай тебе нужную страну</p>
+          <img src="src/media/vpn-instruction/hiddify_05.jpg" alt="hiddify" />
+          <p>
+            7. На главной странице справа сверху тыкаешь на настройки и
+            выбираешь снизу VPN.
+          </p>
+          <p>
+            Иногда программа плохо работает, поэтому пробуй в режиме системного
+            прокси и vpn.
+          </p>
+          <img src="src/media/vpn-instruction/hiddify_06.jpg" alt="hiddify" />
+          <p>ГОТОВО :)</p>
+
+          <p>
+            Ой... а дальше я сайт не написал... это занимает много времени...
+          </p>
+          <p>Вот тебе ссылка на гайд, я оттуда всё брал</p>
+          <div class="windows-dowload">
+            <a
+              href="https://wiki.gemera-vpn.net/windows-linux/spisok-prilozhenii-i-ikh-nastroikakh"
+              target="_blank"
+            >
+              <div class="button">
+                <span>Ссылочка</span>
+              </div>
+            </a>
+          </div>
+          <p>
+            Кстати, специально для тебя сделаю рассылку из бота в телеграмме,
+            когда здесь выйдет новое обновление по дизайну :)
+          </p>
+        </div>
+      </div>
+
+      <!--  -->
+    </div>
   </body>
 </html>
