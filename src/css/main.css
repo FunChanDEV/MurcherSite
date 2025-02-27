@@ -1,0 +1,46 @@
+body {
+    background-color: black;
+    color: azure;
+}
+
+@font-face {
+  font-family: 'NITW';
+  src: url('../fonts/NITW-Regular.woff') format('woff'),
+  url('../fonts/NITW-Regular.woff2') format('woff2');
+}
+
+
+div {
+  font-family: 'NITW';
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.timer {
+    display: grid;
+    grid-template-columns: 4.5rem 0.5rem 4.5rem 0.5rem 4.5rem 0.5rem 4.5rem;
+    font-size: 3rem;
+    justify-items: center;
+  }
+  
+  .timer__item {
+    position: relative;
+  }
+  
+  .timer__item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    bottom: -0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.875rem;
+    color: #424242;
+  }
+
